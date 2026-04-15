@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<!-- saved from url=(0068)file:///Users/valeriearango/Downloads/valeriearango_infographic.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Filipino Cuisine Infographic</title>
+<link href="./Filipino Cuisine Infographic_files/css2" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: #f0ead6;
+    font-family: 'Space Mono', monospace;
+    width: 750px;
+    margin: 0 auto;
+  }
+
+  .infographic {
+    background: #f0ead6;
+    padding: 0;
+    width: 750px;
+  }
+
+  /* HEADER */
+  .header {
+    text-align: center;
+    padding: 32px 40px 16px;
+    border-bottom: 3px solid #111;
+  }
+
+  .header h1 {
+    font-family: 'Anton', sans-serif;
+    font-size: 72px;
+    letter-spacing: 4px;
+    color: #111;
+    line-height: 1;
+    text-transform: uppercase;
+  }
+
+  .subheader {
+    text-align: center;
+    padding: 14px 40px;
+    border-bottom: 3px solid #111;
+  }
+
+  .subheader h2 {
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    font-size: 17px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #111;
+  }
+
+  /* INTRO SECTION */
+  .intro-section {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding: 28px 40px;
+    border-bottom: 3px solid #111;
+  }
+
+  .book-illustration {
+    background: #6b7fe3;
+    width: 260px;
+    min-width: 260px;
+    height: 170px;
+    border: 3px solid #111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .book-inner {
+    background: #b8f5c8;
+    width: 200px;
+    height: 130px;
+    border: 2px solid #111;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2px;
+    padding: 8px;
+    position: relative;
+  }
+
+  .book-page {
+    background: #fffde7;
+    border: 1px solid #555;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    padding: 4px;
+  }
+
+  .book-line {
+    height: 4px;
+    background: #6b7fe3;
+    border-radius: 1px;
+  }
+
+  .book-line.short { width: 60%; }
+  .book-line.medium { width: 80%; }
+
+  .book-spine {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: #111;
+    transform: translateX(-50%);
+  }
+
+  .intro-text {
+    font-size: 13px;
+    line-height: 1.7;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #111;
+    font-weight: 700;
+  }
+
+  /* TRADITIONAL FOODS SECTION */
+  .traditional-section {
+    border-bottom: 3px solid #111;
+  }
+
+  .traditional-header {
+    padding: 20px 40px 12px;
+  }
+
+  .traditional-header h3 {
+    font-family: 'Anton', sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #111;
+    line-height: 1.1;
+  }
+
+  .traditional-content {
+    display: flex;
+    gap: 20px;
+    padding: 0 40px 24px;
+    align-items: flex-start;
+  }
+
+  .traditional-text {
+    flex: 1;
+    font-size: 12px;
+    line-height: 1.75;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    color: #111;
+    font-weight: 400;
+  }
+
+  .magazine-illustration {
+    background: #f9a8d4;
+    width: 200px;
+    min-width: 200px;
+    height: 180px;
+    border: 3px solid #111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .mag-inner {
+    background: #fde68a;
+    width: 150px;
+    height: 140px;
+    border: 2px solid #111;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    transform: rotate(5deg);
+  }
+
+  .mag-top {
+    display: flex;
+    gap: 5px;
+  }
+
+  .mag-img-block {
+    width: 50px;
+    height: 40px;
+    background: #86efac;
+    border: 1px solid #111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+  }
+
+  .mag-lines {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding-top: 3px;
+  }
+
+  .mag-line {
+    height: 4px;
+    background: #6b7fe3;
+    border-radius: 1px;
+  }
+
+  /* FACTS SECTION */
+  .facts-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-bottom: 3px solid #111;
+  }
+
+  .fact-item {
+    padding: 20px 16px;
+    text-align: center;
+    border-right: 3px solid #111;
+  }
+
+  .fact-item:last-child {
+    border-right: none;
+  }
+
+  .fact-label {
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #111;
+    margin-bottom: 10px;
+  }
+
+  .fact-text {
+    font-size: 11px;
+    line-height: 1.6;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    color: #111;
+  }
+
+  /* MENU SECTION */
+  .menu-section {
+    display: flex;
+    border-bottom: 3px solid #111;
+  }
+
+  .current-practices {
+    background: #fff;
+    width: 170px;
+    min-width: 170px;
+    border-right: 3px solid #111;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .current-practices-label {
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: lowercase;
+    line-height: 1.3;
+    text-align: center;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #111;
+    margin-bottom: 12px;
+    color: #111;
+    font-style: italic;
+  }
+
+  .practices-list {
+    font-size: 11px;
+    line-height: 1.7;
+    color: #111;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+  }
+
+  .practices-list li {
+    list-style: none;
+    padding: 4px 0;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .practices-list li::before {
+    content: "→ ";
+    color: #e3562a;
+    font-weight: 700;
+  }
+
+  .menu-content {
+    flex: 1;
+    padding: 20px 24px;
+  }
+
+  .menu-title {
+    font-family: 'Anton', sans-serif;
+    font-size: 36px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #111;
+    line-height: 1;
+    margin-bottom: 16px;
+  }
+
+  .menu-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+
+  .menu-col {
+    font-size: 11px;
+    line-height: 1.7;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    color: #111;
+  }
+
+  .menu-col strong {
+    display: block;
+    font-size: 12px;
+    margin-bottom: 6px;
+    color: #e3562a;
+  }
+
+  .menu-tag-bar {
+    background: #fbbf24;
+    height: 28px;
+    margin-top: 16px;
+    border: 2px solid #111;
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    gap: 12px;
+  }
+
+  .menu-tag {
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #111;
+  }
+
+  .menu-tag::after {
+    content: " •";
+    color: #e3562a;
+  }
+
+  .menu-tag:last-child::after { content: ""; }
+
+  /* POPULAR DISHES SECTION */
+  .dishes-section {
+    border-bottom: 3px solid #111;
+    padding: 24px 40px;
+  }
+
+  .dishes-section h3 {
+    font-family: 'Anton', sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #111;
+    margin-bottom: 16px;
+  }
+
+  .dishes-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+  }
+
+  .dish-card {
+    border: 2px solid #111;
+    overflow: hidden;
+  }
+
+  .dish-header {
+    padding: 8px 12px;
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-bottom: 2px solid #111;
+  }
+
+  .dish-card:nth-child(1) .dish-header { background: #6b7fe3; color: #fff; }
+  .dish-card:nth-child(2) .dish-header { background: #f9a8d4; color: #111; }
+  .dish-card:nth-child(3) .dish-header { background: #86efac; color: #111; }
+  .dish-card:nth-child(4) .dish-header { background: #fbbf24; color: #111; }
+  .dish-card:nth-child(5) .dish-header { background: #f97316; color: #fff; }
+  .dish-card:nth-child(6) .dish-header { background: #a78bfa; color: #fff; }
+
+  .dish-body {
+    padding: 10px 12px;
+    font-size: 10.5px;
+    line-height: 1.6;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    background: #fff;
+    color: #111;
+  }
+
+  /* FOOTER */
+  .footer-section {
+    background: #111;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-text {
+    color: #f0ead6;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 1.6;
+  }
+
+  .footer-icons {
+    display: flex;
+    gap: 12px;
+  }
+
+  .footer-icon {
+    width: 36px;
+    height: 36px;
+    border: 2px solid #f0ead6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+  }
+</style>
+</head>
+<body>
+<div class="infographic">
+
+  <!-- HEADER -->
+  <div class="header">
+    <h1>Filipino Cuisine</h1>
+  </div>
+  <div class="subheader">
+    <h2>What You Need to Know</h2>
+  </div>
+
+  <!-- INTRO -->
+  <div class="intro-section">
+    <div class="book-illustration">
+      <div class="book-inner">
+        <div class="book-page">
+          <div class="book-line"></div>
+          <div class="book-line short"></div>
+          <div class="book-line medium"></div>
+          <div class="book-line"></div>
+          <div class="book-line short"></div>
+          <div class="book-line medium"></div>
+          <div class="book-line"></div>
+          <div class="book-line short"></div>
+        </div>
+        <div class="book-page">
+          <div class="book-line medium"></div>
+          <div class="book-line short"></div>
+          <div class="book-line"></div>
+          <div class="book-line medium"></div>
+          <div class="book-line short"></div>
+          <div class="book-line"></div>
+          <div class="book-line medium"></div>
+          <div class="book-line short"></div>
+        </div>
+        <div class="book-spine"></div>
+      </div>
+    </div>
+    <p class="intro-text">"The cuisine and culture of the Philippines is heavily influenced by Spanish, Chinese, and American tradition. This rich blend of cultures has created a unique and flavorful food identity that reflects centuries of trade, colonization, and migration."</p>
+  </div>
+
+  <!-- TRADITIONAL FOODS -->
+  <div class="traditional-section">
+    <div class="traditional-header">
+      <h3>Traditional Foods<br>&amp; Dishes</h3>
+    </div>
+    <div class="traditional-content">
+      <p class="traditional-text">White rice is the main food in the diet and it is usually served around three times a day. Fish is the primary protein source food found in Filipino cuisine. Vinegar, soy sauce, salt, fish sauce, and fermented fish are traditional flavorings used in Filipino cuisine. Meals are typically eaten with the hands in a tradition called "kamayan," which means eating without utensils, fostering a communal dining experience.</p>
+      <div class="magazine-illustration">
+        <div class="mag-inner">
+          <div class="mag-top">
+            <div class="mag-img-block">🍚</div>
+            <div class="mag-lines">
+              <div class="mag-line"></div>
+              <div class="mag-line" style="width:50%"></div>
+              <div class="mag-line" style="width:70%"></div>
+              <div class="mag-line" style="width:40%"></div>
+            </div>
+          </div>
+          <div class="mag-line" style="width:100%;height:4px;background:#6b7fe3;margin-top:4px"></div>
+          <div class="mag-line" style="width:90%;height:4px;background:#6b7fe3;margin-top:4px"></div>
+          <div class="mag-line" style="width:70%;height:4px;background:#6b7fe3;margin-top:4px"></div>
+          <div class="mag-line" style="width:80%;height:4px;background:#6b7fe3;margin-top:4px"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FACTS -->
+  <div class="facts-section">
+    <div class="fact-item">
+      <div class="fact-label">Fact #1</div>
+      <p class="fact-text">More than 3 million Americans are of Philippine descent.</p>
+    </div>
+    <div class="fact-item">
+      <div class="fact-label">Fact #2</div>
+      <p class="fact-text">More Filipinos live in California than any other state.</p>
+    </div>
+    <div class="fact-item">
+      <div class="fact-label">Fact #3</div>
+      <p class="fact-text">Hawaii, Texas, New York, and New Jersey are the other top states for Filipino settlers.</p>
+    </div>
+  </div>
+
+  <!-- MENU SECTION -->
+  <div class="menu-section">
+    <div class="current-practices">
+      <div class="current-practices-label">current food<br>practices</div>
+      <ul class="practices-list">
+        <li>Rice at every meal</li>
+        <li>Communal dining</li>
+        <li>Street food culture</li>
+        <li>Fermented staples</li>
+        <li>Sweet &amp; savory balance</li>
+        <li>Slow-cooked stews</li>
+      </ul>
+    </div>
+    <div class="menu-content">
+      <div class="menu-title">What's on<br>the Menu?</div>
+      <div class="menu-columns">
+        <div class="menu-col">
+          <strong>🌅 Agahan (Breakfast)</strong>
+          Often rice fried with garlic and eggs or broiled fish served with coffee or hot chocolate. Pandesal (soft bread rolls) are also a breakfast staple eaten with butter or jam.
+        </div>
+        <div class="menu-col">
+          <strong>☀️ Tanghalian (Lunch) &amp; Hapunan (Dinner)</strong>
+          Larger meals including rice, noodles, and possibly an adobo (stew) or sinigang (pork with fruit and vegetables). Soup-based dishes are common for dinner.
+        </div>
+      </div>
+      <div class="menu-tag-bar">
+        <span class="menu-tag">Adobo</span>
+        <span class="menu-tag">Sinigang</span>
+        <span class="menu-tag">Kare-Kare</span>
+        <span class="menu-tag">Lechon</span>
+        <span class="menu-tag">Pancit</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- POPULAR DISHES -->
+  <div class="dishes-section">
+    <h3>Popular Dishes to Know</h3>
+    <div class="dishes-grid">
+      <div class="dish-card">
+        <div class="dish-header">Adobo</div>
+        <div class="dish-body">The national dish. Meat (usually chicken or pork) braised in vinegar, soy sauce, garlic, and bay leaves. Tangy, savory, and deeply flavorful.</div>
+      </div>
+      <div class="dish-card">
+        <div class="dish-header">Sinigang</div>
+        <div class="dish-body">A sour tamarind-based soup with pork, shrimp, or fish and vegetables. One of the most beloved comfort foods in the Philippines.</div>
+      </div>
+      <div class="dish-card">
+        <div class="dish-header">Lechon</div>
+        <div class="dish-body">Whole roasted pig, crispy on the outside and juicy inside. A centerpiece dish at celebrations and festivals across the country.</div>
+      </div>
+      <div class="dish-card">
+        <div class="dish-header">Pancit</div>
+        <div class="dish-body">Stir-fried noodles with vegetables and meat, influenced by Chinese cuisine. Often served at birthdays as a symbol of long life.</div>
+      </div>
+      <div class="dish-card">
+        <div class="dish-header">Kare-Kare</div>
+        <div class="dish-body">Oxtail and vegetables slow-cooked in a rich peanut sauce, served with fermented shrimp paste (bagoong) on the side.</div>
+      </div>
+      <div class="dish-card">
+        <div class="dish-header">Halo-Halo</div>
+        <div class="dish-body">A popular shaved ice dessert layered with sweetened fruits, beans, jellies, leche flan, and ube (purple yam) ice cream.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer-section">
+    <div class="footer-text">
+      Filipino Cuisine Infographic<br>
+      Sources: Cultural &amp; culinary tradition research<br>
+      U.S. Census Bureau | Food Heritage Studies
+    </div>
+    <div class="footer-icons">
+      <div class="footer-icon">🍚</div>
+      <div class="footer-icon">🐟</div>
+      <div class="footer-icon">🌶️</div>
+    </div>
+  </div>
+
+</div>
+
+
+</body></html>
